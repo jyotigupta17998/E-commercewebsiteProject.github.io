@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(){
+      
+      window.addEventListener('scroll', function() {
+             
+      if (window.scrollY > 200) {
+      document.getElementById('navbar-top').classList.add('fixed-top');
+      navbar_height = document.querySelector('.navbar').offsetHeight;
+      document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+           document.getElementById('navbar-top').classList.remove('fixed-top');
+      document.body.style.paddingTop = '0';
+      } 
+      });
+      }); 
+</script> 
+      <style type="text/css">
+       .fixed-top {
+          top: -60px;
+          transform: translateY(60px);
+          transition: transform .5s;
+      }
+      </style>
+
+</head>
+<body>
+<!--Header top start-->
+<div class="top-header" style="background-color: #1f1d1d; height: 52px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="header-contact" style="padding: 15px 0;">
+                    <ul style="list-style: none;">
+                        <li>Welcome to Our store Multikart</li>
+                        <li><i class="fa fa-phone" ></i>Call Us: 123 - 456 - 7890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right">
+                 <ul class="header-end" style="list-style: none;">
+                    <li class="mobile-wishlist"><a href="#"><i class="fa fa-heart" style="color: grey;"></i></a></li>
+                    <li class="mobile-account"> <i class="fa fa-user" style="padding-right: 10px;"></i>My Account</li>
+                 </ul>
+            </div>
+         </div>
+    </div>
+</div>
+
+<!--Navbar Top-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg" id="navbar-top">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-fluid" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Feature</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop-topfilter.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          SHOP
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Product
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="blog-details.html " id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Blog
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                  </ul>
+                  <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
+                </div>
+              </nav>
+        </div>
+    </div>
+</div>
+
+<!-- home slider -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active slide1">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="textbox">
+              <h4 style="font-weight:600; letter-spacing :5px; color: #777777;">Welcome To Fashion</h4>
+              <h1 style="text-transform:uppercase; color:#222222; font-size:60px; font-weight:600; margin-top: 10px; letter-spacing: 1px; padding-top: 10px; padding-bottom: 15px;">Men Fashion</h1>
+             <a href="#" class="btn btn-solid">Shop Now</a>
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+      <div class="carousel-item slide2">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="textbox">
+              <h4 style="font-weight:600; letter-spacing :5px; color: #777777;">Welcome To Fashion</h4>
+              <h1 style="text-transform:uppercase; color:#222222; font-size:60px; font-weight:600; margin-top: 10px; letter-spacing: 1px; padding-top: 10px; padding-bottom: 15px;">Women Fashion</h1>
+             <a href="#" class="btn btn-solid">Shop Now</a>
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- collection banner -->
+  <section class="banner" style="padding-bottom:0px; padding-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#" style="text-decoration: none;">
+                  <div class="collection-banner" style="position: relative; text-align: center;">
+                        <div class="img-part1">
+                             <div class="contain-banner">                          
+                                 <h4>save 30%</h4>
+                                 <h2>men</h2>
+                            </div>
+                         </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="#" style="text-decoration: none;">
+                    <div class="collection-banner" style="position: relative; text-align: center;">
+                        <div class="img-part2">
+                          <div class="contain-banner">
+                                <h4>save 60%</h4>
+                                <h2>women</h2>
+                          </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Paragraph-->
+<div class="container" style="padding-top:50px;">
+    <div class="title-text" style="text-align: center;">
+       <h6 style="color: red; font-size: 20px;">Special Offer</h6>
+       <h2 class="latest">LATEST DROPS</h2>
+       <p class="para-text">Looking for the latest trends in clothing, shoes and accessories? Welcome to our 'Latest Drops' edit, bringing you all the latest styles from all your fave brands.</p>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="img-text">
+                          <img src="img/27.jpg" class="img-fluid" alt="">
+                          <div class="product-detail">
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i> 
+                                  <i class="fa fa-star"></i>
+                                   <i class="fa fa-star"></i>
+                            </div>
+                            <h6>Purple polo tshirt</h6>
+                            <h4>$20.00</h4>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="img-text">
+                        <img src="img/28.jpg" class="img-fluid" alt="">
+                        <div class="product-detail">
+                          <div class="rating">
+                              <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                          </div>
+                          <h6>Purple polo tshirt</h6>
+                          <h4>$20.00</h4>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="img-text">
+                        <img src="img/33.jpg" class="img-fluid" alt="">
+                        <div class="product-detail">
+                          <div class="rating">
+                              <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                          </div>
+                          <h6>Purple polo tshirt</h6>
+                          <h4>$20.00</h4>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="img-text">
+                        <img src="img/34.jpg" class="img-fluid" alt="">
+                        <div class="product-detail">
+                          <div class="rating">
+                              <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                          </div>
+                          <h6>Purple polo tshirt</h6>
+                          <h4>$20.00</h4>
+                      </div>
+                    </div>
+                </div>   
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="img-text">
+                        <img src="img/1 (1).jpg" class="img-fluid" alt="">
+                        <div class="product-detail">
+                          <div class="rating">
+                              <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i>
+                                 <i class="fa fa-star"></i>
+                          </div>
+                          <h6>Purple polo tshirt</h6>
+                          <h4>$20.00</h4>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="img-text">
+                      <img src="img/2 (1).jpg" class="img-fluid" alt="">
+                      <div class="product-detail">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                             <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i> 
+                              <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                        </div>
+                        <h6>Purple polo tshirt</h6>
+                        <h4>$20.00</h4>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3">
+                  <div class="img-text">
+                      <img src="img/33.jpg" class="img-fluid" alt="">
+                      <div class="product-detail">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                             <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i> 
+                              <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                        </div>
+                        <h6>Purple polo tshirt</h6>
+                        <h4>$20.00</h4>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3">
+                  <div class="img-text">
+                      <img src="img/27.jpg" class="img-fluid" alt="">
+                      <div class="product-detail">
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                             <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i> 
+                              <i class="fa fa-star"></i>
+                               <i class="fa fa-star"></i>
+                        </div>
+                        <h6>Purple polo tshirt</h6>
+                        <h4>$20.00</h4>
+                    </div>
+                  </div>
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- parallex banner -->
+
+  <section class="parallex-banner" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="banner-contain">
+                    <h2 style="color: red; font-size: 90px; text-align: center;">2021</h2>
+                    <h3>fashion trends</h3>
+                    <h4>special offer</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+<!-- product -->
+<div class="container" style="padding-top :80px;">
+    <div class="title-text" style="text-align: center;">
+       <h6 style="color: red; font-size: 20px;">Exclusive Products</h6>
+       <h2 class="latest" style="padding-bottom: 10px; padding-top: 10px;">EVERYDAY CASUAL</h2>
+       <div class="row" style="padding-bottom: 40px;">
+           <div class="col-md-3"></div>
+           <div class="col-md-2" style="color: red;">WORK CASUAL</div>
+           <div class="col-md-2">WFH WEAR</div>
+           <div class="col-md-2">COMFORT WEAR</div>
+           <div class="col-md-3"></div>
+        </div>
+    </div>
+    <div class="product-img">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="img-text">
+                    <img src="img/27.jpg" class="img-fluid" alt="">
+                    <div class="product-detail">
+                      <div class="rating">
+                          <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i>
+                             <i class="fa fa-star"></i>
+                      </div>
+                      <h6>Purple polo tshirt</h6>
+                      <h4>$20.00</h4>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="img-text">
+                  <img src="img/28.jpg" class="img-fluid" alt="">
+                  <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                         <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Purple polo tshirt</h6>
+                    <h4>$20.00</h4>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-3">
+              <div class="img-text">
+                  <img src="img/33.jpg" class="img-fluid" alt="">
+                  <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                         <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Purple polo tshirt</h6>
+                    <h4>$20.00</h4>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-3">
+              <div class="img-text">
+                  <img src="img/34.jpg" class="img-fluid" alt="">
+                  <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                         <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Purple polo tshirt</h6>
+                    <h4>$20.00</h4>
+                </div>
+              </div>
+          </div>
+
+          
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="img-text">
+                    <img src="img/27.jpg" class="img-fluid" alt="">
+                    <div class="product-detail">
+                      <div class="rating">
+                          <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star"></i>
+                             <i class="fa fa-star"></i>
+                      </div>
+                      <h6>Purple polo tshirt</h6>
+                      <h4>$20.00</h4>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="img-text">
+                  <img src="img/28.jpg" class="img-fluid" alt="">
+                  <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                         <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Purple polo tshirt</h6>
+                    <h4>$20.00</h4>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-3">
+              <div class="img-text">
+                  <img src="img/33.jpg" class="img-fluid" alt="">
+                  <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                         <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Purple polo tshirt</h6>
+                    <h4>$20.00</h4>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-3">
+              <div class="img-text">
+                  <img src="img/34.jpg" class="img-fluid" alt="">
+                  <div class="product-detail">
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                         <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i> 
+                          <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                    </div>
+                    <h6>Purple polo tshirt</h6>
+                    <h4>$20.00</h4>
+                </div>
+              </div>
+          </div>   
+        </div>
+    </div>
+    </div>
+<!-- service layout -->
+<div class="container" style="padding-top: 100px; padding-bottom: 100px;">
+    <section class="service border-section">
+        <div class="row">
+            <div class="col-md-4 service block" >
+                <div class="media">
+                    <i class="fa fa-truck" aria-hidden="true"  class="mr-3"></i>
+                    <div class="media-body">
+                      <h5 class="mt-0"> free shipping</h5>
+                      <p>free shipping world wide</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 service block" >
+                <div class="media">
+                    <i class="fa fa-clock-o" aria-hidden="true" class="mr-3"></i>
+                    <div class="media-body">
+                      <h5 class="mt-0"> 24 X 7 Service</h5>
+                      <p>free shipping world wide</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 service block" >
+                <div class="media">
+                    <i class="fa fa-volume-up" aria-hidden="true"  class="mr-3"></i>
+                    <div class="media-body">
+                      <h5 class="mt-0">Festival Offer   </h5>
+                      <p>free shipping world wide</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- instagram section -->
+<div class="instagram-section">
+   <div class="container-fluid">
+    <h2 class="title-borderless" style="padding-bottom: 20px;">#whowearwhat</h2>
+    <div class="row" style="    filter: drop-shadow(2px 4px 6px black);">
+        <div class="col-md-2">
+            <img src="img/3.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-2">
+            <img src="img/4.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-2">
+            <img src="img/5.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-2">
+            <img src="img/6.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-2">
+            <img src="img/7.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-2">
+            <img src="img/8.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+    <div class="row" style="padding-top: 100px; padding-bottom: 100px; text-align: center; filter: contrast(0.5);">
+        <div class="col-md-1"></div>
+        <div class="col-md-2"><img src="img/logo1.png" alt="" class="img-fluid"></div>
+        <div class="col-md-2"><img src="img/logo2.png" alt="" class="img-fluid"></div>
+        <div class="col-md-2"><img src="img/logo3.png" alt="" class="img-fluid"></div>
+        <div class="col-md-2"><img src="img/logo4.png" alt="" class="img-fluid"></div>
+        <div class="col-md-2"><img src="img/logo5.png" alt="" class="img-fluid"></div>
+        <div class="col-md-1"></div>
+    </div>
+   </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+      <section class="small-section">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="subscribe">
+                    <div>
+                        <h4>KNOW IT ALL FIRST!</h4>
+                        <p>Never Miss Anything From Multikart By Signing Up To Our Newsletter.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3">
+                        <input type="text" class="form-control" name="EMAIL" id="mce-EMAIL" placeholder="Enter your email" required="required">
+                    </div>
+                    <button type="submit" class="btn btn-solid" id="mc-submit">subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="row" style="padding-top: 50px;">
+      <div class="col-md-4">
+        <div class="footer-logo">
+          <img src="img/logo.png" class="img-fluid" alt="">
+          <p style="color: #777777; padding-top: 26px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="footer-social">
+              <ul>
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-2">
+         <div class="sub-title">
+                 <h4 class="footer-title">my account</h4>
+            <div class="footer-contant">
+                <ul>
+                    <li><a href="#">mens</a></li>
+                    <li><a href="#">womens</a></li>
+                    <li><a href="#">clothing</a></li>
+                    <li><a href="#">accessories</a></li>
+                    <li><a href="#">featured</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+     <div class="col-md-2">
+      <div class="sub-title">
+              <h4 class="footer-title">why we choose</h4>
+          <div class="footer-contant">
+              <ul>
+                  <li><a href="#">shipping &amp; return</a></li>
+                  <li><a href="#">secure shopping</a></li>
+                  <li><a href="#">gallary</a></li>
+                  <li><a href="#">affiliates</a></li>
+                  <li><a href="#">contacts</a></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+   <div class="col-md-4">
+     <div class="sub-title">
+            <h4 class="footer-title">store information</h4>
+        <div class="footer-contant">
+            <ul class="contact-list">
+                <li><i class="fa fa-map-marker"></i>Multikart Demo Store, Demo store India 345-659
+                </li>
+                <li><i class="fa fa-phone"></i>Call Us: 123-456-7898</li>
+                <li><i class="fa fa-envelope-o"></i>Email Us: <a href="#">Support@Fiot.com</a></li>
+                <li><i class="fa fa-fax"></i>Fax: 123456</li>
+            </ul>
+        </div>
+     </div>
+  </div>
+    </div>
+    </div>
+</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
